@@ -132,13 +132,13 @@ export default{
             },
             {
               sortable: true,
-              text: 'אחראי עסקי',
+              text: 'מאפיין 1',
               value: 'Businessowner',
               align: 'center'
             },
             {
               sortable: true,
-              text: 'אחראי תפעולי',
+              text: 'מאפיין 2',
               value: 'Itowner',
               align: 'center'
             },

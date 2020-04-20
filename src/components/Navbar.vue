@@ -53,8 +53,8 @@ export default {
             {icon: 'home', text: 'מסך ראשי', route: '/', tree_visibility: 'false'},
             {icon: 'search', text: 'חיפוש לפי מילת מפתח', route: '/freeview'},
             {icon: 'format_list_bulleted', text: 'חיפוש בעץ נושאים', route: '/treeview'},
-            {icon: 'description', text: 'רשימת כל הטבלאות', route: '/alltablesview'},
-             {icon: 'network', text: 'קשרים', route: '/d3networkview'}
+            {icon: 'description', text: 'רשימת כל הטבלאות', route: '/alltablesview'}
+            //{icon: 'network', text: 'קשרים', route: '/d3networkview'}
         ]
         }
     },

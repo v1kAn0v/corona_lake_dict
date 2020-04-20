@@ -90,7 +90,7 @@
                       <v-layout column>
                           <v-layout row>  
                             <v-flex lg3>
-                              <span class="font-weight-bold">אחראי טכנולוגי: </span>
+                              <span class="font-weight-bold">מאפיין 1: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Itowner : this.parentHeaders[0].Itowner}}</span>
@@ -98,7 +98,7 @@
                           </v-layout>
                           <v-layout row>
                             <v-flex lg3>
-                              <span class="font-weight-bold">אחראי עסקי: </span>
+                              <span class="font-weight-bold">מאפיין 2: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Businessowner : this.parentHeaders[0].Businessowner}}</span>
