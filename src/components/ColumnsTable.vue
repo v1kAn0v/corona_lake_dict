@@ -99,8 +99,8 @@ export default{
         },
         {
           sortable: true,
-          text: 'שם שדה',
-          value: 'Fieldname',
+          text: 'מזהה טבלה',
+          value: 'Tableid',
           align: 'center'
         },
         {
@@ -111,38 +111,38 @@ export default{
         },
         {
           sortable: true,
-          text: 'שם שדה בעברית',
-          value: 'Hebtablename',
-          align: 'center'
-        },
-        {
-          sortable: true,
-          text: 'תאור שדה',
-          value: 'Fielddesc',
-          align: 'center'
-        },
-        {
-          sortable: true,
           text: 'מפתח',
           value: 'Key',
           align: 'center'
         },
         {
           sortable: true,
-          text: 'יכול לקבל ערך NULL',
+          text: 'שם שדה',
+          value: 'Fieldname',
+          align: 'center'
+        },
+        {
+          sortable: true,
+          text: 'שם שדה בעברית',
+          value: 'Hebfieldname',
+          align: 'center'
+        },
+        {
+          sortable: true,
+          text: 'מידע נוסף',
           value: 'Isnullable',
           align: 'center'
         },
         {
           sortable: true,
-          text: 'סוג השדה',
+          text: 'סוג נתונים',
           value: 'Type',
           align: 'center'
         },
         {
           sortable: true,
-          text: 'אורך השדה',
-          value: 'Length',
+          text: 'תאור שדה',
+          value: 'Fielddesc',
           align: 'center'
         },
         {

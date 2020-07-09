@@ -120,43 +120,49 @@ export default{
             },
             {
               sortable: true,
-              text: 'נושא',
+              text: 'מקור נתונים',
               value: 'Subject',
               align: 'center'
             },
             {
               sortable: true,
-              text: 'תכולת הטבלה',
+              text: 'רמת רשומה',
               value: 'Tablecontent',
               align: 'center'
             },
             {
               sortable: true,
-              text: 'מאפיין 1',
+              text: 'תדירות עדכון',
               value: 'Businessowner',
               align: 'center'
             },
             {
               sortable: true,
-              text: 'מאפיין 2',
+              text: 'סוג נתונים',
               value: 'Itowner',
               align: 'center'
             },
                   {
               sortable: true,
-              text: 'תדירות טעינת נתונים',
+              text: 'אוכלוסיה',
               value: 'Dataupdfreq',
               align: 'center'
             },
             {
               sortable: true,
-              text: 'רמת היסטוריה',
+              text: 'חלון זמן',
               value: 'Datayears',
+              align: 'center'
+            },
+                        {
+              sortable: true,
+              text: 'מפתח',
+              value: 'Dataessence',
               align: 'center'
             },
             {
               sortable: true,
-              text: 'סטטוס טבלה',
+              text: 'הערות',
               value: 'Tablestatus',
               align: 'center'
             }

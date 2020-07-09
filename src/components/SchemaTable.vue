@@ -46,13 +46,13 @@
                       <h3><span class="font-weight-bold">שם טבלה: {{this.tableHeaders !== undefined ? this.tableHeaders.Tablename : this.parentHeaders[0].Tablename}}</span></h3>
                     </v-flex>
                     <v-flex lg2>
-                      <h3><span class="font-weight-bold">שם טבלה עברי: {{ this.tableHeaders !== undefined ? this.tableHeaders.Hebtablename : this.parentHeaders[0].Hebtablename}}</span></h3>
+                      <h3><span class="font-weight-bold">שם טבלה בעברית: {{ this.tableHeaders !== undefined ? this.tableHeaders.Hebtablename : this.parentHeaders[0].Hebtablename}}</span></h3>
                     </v-flex>
                     <v-flex lg2>
                       <h3><span class="font-weight-bold">מזהה טבלה: {{this.tableHeaders !== undefined ? this.tableHeaders.Tableid : this.parentHeaders[0].Tableid}}</span></h3>
                     </v-flex>
                     <v-flex lg2>
-                    <h3><span class="font-weight-bold">נושא: {{this.tableHeaders !== undefined ? this.tableHeaders.Subject : this.parentHeaders[0].Subject}}</span></h3>
+                    <h3><span class="font-weight-bold">מקור הנתונים: {{this.tableHeaders !== undefined ? this.tableHeaders.Subject : this.parentHeaders[0].Subject}}</span></h3>
                     </v-flex>
                   </v-layout>
 
@@ -61,7 +61,7 @@
                       <v-layout column>
                           <v-layout row>  
                             <v-flex lg3>
-                              <span class="font-weight-bold">תכולת הטבלה: </span>
+                              <span class="font-weight-bold">רמת רשומה: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Tablecontent : this.parentHeaders[0].Tablecontent}}</span>
@@ -69,7 +69,7 @@
                           </v-layout>
                           <v-layout row>
                             <v-flex lg3>
-                              <span class="font-weight-bold">נתונים מתייחסים לשנים: </span>
+                              <span class="font-weight-bold">נתונים מתיחסים לזמן: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Datayears : this.parentHeaders[0].Datayears}}</span>
@@ -77,7 +77,7 @@
                           </v-layout>
                           <v-layout row>
                             <v-flex lg3>
-                              <span class="font-weight-bold">סטטוס טבלה: </span>
+                              <span class="font-weight-bold">הערות: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Tablestatus : this.parentHeaders[0].Tablestatus}}</span>
@@ -90,7 +90,7 @@
                       <v-layout column>
                           <v-layout row>  
                             <v-flex lg3>
-                              <span class="font-weight-bold">מאפיין 1: </span>
+                              <span class="font-weight-bold">סוג הנתונים: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Itowner : this.parentHeaders[0].Itowner}}</span>
@@ -98,7 +98,7 @@
                           </v-layout>
                           <v-layout row>
                             <v-flex lg3>
-                              <span class="font-weight-bold">מאפיין 2: </span>
+                              <span class="font-weight-bold">תדירות עדכון: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Businessowner : this.parentHeaders[0].Businessowner}}</span>
@@ -106,7 +106,7 @@
                           </v-layout>
                           <v-layout row>
                             <v-flex lg3>
-                              <span class="font-weight-bold">תדירות עדכון: </span>
+                              <span class="font-weight-bold">אוכלוסיה: </span>
                             </v-flex>
                             <v-flex lg3>
                               <span>{{this.tableHeaders !== undefined ? this.tableHeaders.Dataupdfreq : this.parentHeaders[0].Dataupdfreq}}</span>
@@ -204,7 +204,7 @@ export default{
       },
       {
         sortable: true,
-        text: 'שם טבלה ',
+        text: 'שם טבלה בלועזית ',
         value: 'Tablename',
         align: 'center'
       },
@@ -216,7 +216,7 @@ export default{
       },
       {
         sortable: true,
-        text: 'שם שדה',
+        text: 'שם שדה בלועזית',
         value: 'Fieldname',
         align: 'center'
       },
@@ -228,19 +228,19 @@ export default{
       },
       {
         sortable: true,
-        text: 'יכול לקבל ערך NULL',
+        text: 'שדה חובה',
         value: 'Isnullable',
         align: 'center'
       },
       {
         sortable: true,
-        text: 'סוג השדה',
+        text: 'סוג נתונים בשדה',
         value: 'Type',
         align: 'center'
       },
       {
         sortable: true,
-        text: 'אורך השדה',
+        text: 'אורך',
         value: 'Length',
         align: 'center'
       },
