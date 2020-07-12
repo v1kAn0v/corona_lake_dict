@@ -55,17 +55,17 @@
           -->
         <template slot="items" slot-scope="{ item }">
           <td  dir="auto" class="text-xs-center">{{ item.Fieldid }}</td>
-          <td dir="auto">{{ item.Fieldname }}</td>
+          <td dir="auto">{{ item.Tableid }}</td>
           <!-- 
             While linkig to "schemaview", "tableName" string parameter is passed to child UDC "SchemaTable"
            -->
           <td dir="auto" class="text-xs-center"><router-link :to="{ name: 'schemaview', params: {tableName: item.Tablename }}">{{ item.Tablename }}</router-link></td>
-          <td dir="auto">{{ item.Hebfieldname }}</td>
-          <td dir="auto">{{ item.Fielddesc }}</td>
           <td dir="auto" class="text-xs-center">{{ item.Key }}</td>
+          <td dir="auto" class="text-xs-center">{{ item.Fieldname }}</td>
+          <td dir="auto">{{ item.Hebfieldname }}</td>
           <td dir="auto" class="text-xs-center">{{ item.Isnullable }}</td>
           <td dir="auto" class="text-xs-center">{{ item.Type }}</td>
-          <td dir="auto" class="text-xs-center">{{ item.Length }}</td>
+           <td dir="auto">{{ item.Fielddesc }}</td>
           <td dir="auto" class="text-xs-center">{{ item.Fieldstatus }}</td>
         </template>
       </v-data-table>
@@ -135,7 +135,7 @@ export default{
         },
         {
           sortable: true,
-          text: 'סוג נתונים',
+          text: 'סוג נתונים בשדה',
           value: 'Type',
           align: 'center'
         },

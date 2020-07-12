@@ -115,7 +115,7 @@
                       </v-layout>
                     </v-flex>
                     <v-flex lg6>
-                      <span class="font-weight-bold">הסבר עסקי של טבלה: </span><span>{{this.tableHeaders !== undefined ? this.tableHeaders.Tabledesc : this.parentHeaders[0].Tabledesc}}</span>
+                      <span class="font-weight-bold">תיאור טבלה: </span><span>{{this.tableHeaders !== undefined ? this.tableHeaders.Tabledesc : this.parentHeaders[0].Tabledesc}}</span>
                     </v-flex>
                   </v-layout>
                 </v-container>
@@ -161,7 +161,6 @@
             <td dir="auto">{{ item.Hebfieldname }}</td>
             <td dir="auto" class="text-xs-center">{{ item.Isnullable }}</td>
             <td dir="auto">{{ item.Type }}</td>
-            <td dir="auto" class="text-xs-center">{{ item.Length }}</td>
             <td dir="auto">{{ item.Fielddesc }}</td>
             <td dir="auto" class="text-xs-center">{{ item.Fieldstatus }}</td>
           </template>
@@ -204,7 +203,7 @@ export default{
       },
       {
         sortable: true,
-        text: 'שם טבלה בלועזית ',
+        text: 'שם טבלה',
         value: 'Tablename',
         align: 'center'
       },
@@ -216,19 +215,19 @@ export default{
       },
       {
         sortable: true,
-        text: 'שם שדה בלועזית',
+        text: 'שם שדה',
         value: 'Fieldname',
         align: 'center'
       },
       {
         sortable: true,
-        text: 'שם שדה בעברית',
+        text: 'תאור שדה בעברית',
         value: 'Hebfieldname',
         align: 'center'
       },
       {
         sortable: true,
-        text: 'שדה חובה',
+        text: 'מידע נוסף',
         value: 'Isnullable',
         align: 'center'
       },
@@ -239,12 +238,6 @@ export default{
         align: 'center'
       },
       {
-        sortable: true,
-        text: 'אורך',
-        value: 'Length',
-        align: 'center'
-      },
-            {
         sortable: true,
         text: 'תיאור שדה',
         value: 'Fielddesc',

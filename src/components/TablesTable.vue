@@ -70,6 +70,7 @@
             <td dir="auto">{{ item.Itowner }}</td>
             <td dir="auto">{{ item.Dataupdfreq }}</td>
             <td dir="auto">{{ item.Datayears }}</td>
+            <td dir="auto">{{ item.Dataessence }}</td>
             <td dir="auto" class="text-xs-center">{{ item.Tablestatus }}</td>
           </template>
         </v-data-table>
@@ -154,7 +155,7 @@ export default{
               value: 'Datayears',
               align: 'center'
             },
-                        {
+            {
               sortable: true,
               text: 'מפתח',
               value: 'Dataessence',
@@ -162,7 +163,7 @@ export default{
             },
             {
               sortable: true,
-              text: 'הערות',
+              text: 'הערות לשדה מפתח',
               value: 'Tablestatus',
               align: 'center'
             }

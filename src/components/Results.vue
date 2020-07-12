@@ -11,9 +11,9 @@
         </v-card-title>
 
         <v-card-actions dir="rtl">
-          <v-btn flat dir="rtl">שם טבלה בלועזית</v-btn>
+          <v-btn flat dir="rtl">שם טבלה</v-btn>
           <v-btn flat dir="rtl" color="purple">שם טבלה בעברית</v-btn>
-          <v-btn flat dir="rtl" color="indigo">הסבר עסקי של הטבלה</v-btn>
+          <v-btn flat dir="rtl" color="indigo">תיאור טבלה</v-btn>
           <v-spacer></v-spacer>
           <v-btn icon @click="showT = !showT, showCR=!showCR">
             <v-icon>{{ showT ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
@@ -37,9 +37,9 @@
         </v-card-title>
 
         <v-card-actions dir="rtl">
-          <v-btn flat dir="rtl">שם שדה בלועזית</v-btn>
+          <v-btn flat dir="rtl">שם שדה</v-btn>
           <v-btn flat dir="rtl" color="purple">שם שדה בעברית</v-btn>
-          <v-btn flat dir="rtl" color="indigo">הסבר עסקי של שדה</v-btn>
+          <v-btn flat dir="rtl" color="indigo">תיאור שדה</v-btn>
           <v-spacer></v-spacer>
           <v-btn icon @click="showC = !showC, showTR=!showTR">
             <v-icon>{{ showC ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>

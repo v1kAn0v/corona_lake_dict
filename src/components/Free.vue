@@ -95,13 +95,13 @@
               </div>
             </v-card-actions>
             <v-card-actions dir="rtl">
-              <v-btn class="mx-2 font-weight-bold" @click="fieldNameFilter" :disabled="noFieldNameResults" color="light-blue darken-2" dir="rtl">שם שדה בלועזית ({{ results.fieldNameQty }})
+              <v-btn class="mx-2 font-weight-bold" @click="fieldNameFilter" :disabled="noFieldNameResults" color="light-blue darken-2" dir="rtl">שם שדה ({{ results.fieldNameQty }})
                 <v-icon left>filter_list</v-icon>
               </v-btn>
               <v-btn class="mx-2 font-weight-bold" @click="hebFieldNameFilter" :disabled="noFieldHebNameResults" dir="rtl" color="light-blue darken-2">שם שדה בעברית ({{ results.hebFieldNameQty }})
                 <v-icon left>filter_list</v-icon>
               </v-btn>
-              <v-btn class="mx-2 font-weight-bold" @click="fieldDescFilter" :disabled="noFieldDescResults" dir="rtl" color="light-blue darken-2">הסבר עסקי של שדה ({{ results.fieldDescQty }})
+              <v-btn class="mx-2 font-weight-bold" @click="fieldDescFilter" :disabled="noFieldDescResults" dir="rtl" color="light-blue darken-2">תיאור שדה ({{ results.fieldDescQty }})
                 <v-icon left>filter_list</v-icon>
               </v-btn>
               <v-spacer></v-spacer>
@@ -138,13 +138,13 @@
               </div>
             </v-card-actions>
             <v-card-actions dir="rtl">
-              <v-btn light class="mx-2 font-weight-bold" @click="tableNameFilter" :disabled="noTableNameResults" dir="rtl" color="light-blue darken-2">שם טבלה בלועזית ({{ results.tableNameQty }})
+              <v-btn light class="mx-2 font-weight-bold" @click="tableNameFilter" :disabled="noTableNameResults" dir="rtl" color="light-blue darken-2">שם טבלה ({{ results.tableNameQty }})
                 <v-icon left>filter_list</v-icon>
               </v-btn>
               <v-btn light class="mx-2 font-weight-bold" @click="hebTableNameFilter" :disabled="noTableHebNameResults"  dir="rtl" color="light-blue darken-2">שם טבלה בעברית ({{ results.hebTableNameQty }})
                 <v-icon left>filter_list</v-icon>
               </v-btn>
-              <v-btn light class="mx-2 font-weight-bold" @click="tableDescFilter" :disabled="noTableDescResults"  dir="rtl" color="light-blue darken-2">הסבר עסקי של הטבלה ({{ results.tableDescQty }})
+              <v-btn light class="mx-2 font-weight-bold" @click="tableDescFilter" :disabled="noTableDescResults"  dir="rtl" color="light-blue darken-2">תיאור טבלה ({{ results.tableDescQty }})
                 <v-icon left>filter_list</v-icon>
               </v-btn>
               <v-spacer></v-spacer>
